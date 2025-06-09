@@ -1,28 +1,28 @@
 # Bitquant Auto Bot
 
-An automated bot for interacting with the Bitquant.io platform, designed to manage multiple Solana wallets and perform automated chat interactions to earn points.
+An automated Node.js script designed to perform daily interactions on the Bitquant platform to farm points. It cycles through multiple wallets, uses proxies, and simulates chat activity.
 
 ## 🚀 Features
 
-- **Multi-wallet Support**: Manage multiple Solana wallets simultaneously
-- **Proxy Support**: HTTP, HTTPS, SOCKS4, and SOCKS5 proxy support
-- **CAPTCHA Solving**: Automatic Cloudflare Turnstile CAPTCHA solving with 2captcha
-- **Smart Rate Limiting**: Respects daily message limits and implements random delays
-- **Whitelist Checking**: Automatically verifies wallet whitelist status
-- **Activity Tracking**: Monitors points, message counts, and daily limits
+-   **Multi-Wallet Support**: Automatically cycles through all private keys listed in your configuration.
+-   **Proxy Integration**: Uses proxies from a `proxies.txt` file to avoid IP-based rate limiting. Supports HTTP, HTTPS, and SOCKS protocols.
+-   **Automated Chat**: Performs a set number of daily chat interactions using customizable prompts from `questions.txt`.
+-   **Detailed Logging**: Provides rich, colorful console output with status icons and a loading spinner for a clear view of the bot's operations.
+-   **24-Hour Cooldown**: After processing all wallets, a 24-hour countdown timer begins for the next cycle.
+-   **Robust Error Handling**: Gracefully handles common errors and continues processing the next wallet.
 
 ## 📋 Prerequisites
 
 - Node.js v16 or higher
 - npm or yarn package manager
 - Solana private keys (Base58 encoded)
-- Proxy list (optional but recommended)
+- Proxy list (optional)
 
 ## 🛠️ Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/vikitoshi/Bitquant-Auto-Bot.git
+git clone [https://github.com/vikitoshi/Bitquant-Auto-Bot.git](https://github.com/BigFreaky/Bitquant-Auto-Bot.git)
 cd Bitquant-Auto-Bot
 ```
 
