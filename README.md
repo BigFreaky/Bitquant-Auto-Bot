@@ -2,7 +2,7 @@
 
 An automated Node.js script designed to perform daily interactions on the Bitquant platform to farm points. It cycles through multiple wallets, uses proxies, and simulates chat activity.
 
-## 🚀 Features
+## ✨ Features
 
 -   **Multi-Wallet Support**: Automatically cycles through all private keys listed in your configuration.
 -   **Proxy Integration**: Uses proxies from a `proxies.txt` file to avoid IP-based rate limiting. Supports HTTP, HTTPS, and SOCKS protocols.
@@ -47,7 +47,7 @@ socks5://username:password@proxy3.com:1080
 # Add more proxies as needed
 ```
 
-## 🏃‍♂️ How to Run the Bot
+## 🚀 How to Run the Bot
 
 Run the bot:
 ```bash
