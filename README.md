@@ -22,7 +22,7 @@ An automated Node.js script designed to perform daily interactions on the Bitqua
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/vikitoshi/Bitquant-Auto-Bot.git](https://github.com/BigFreaky/Bitquant-Auto-Bot.git)
+git clone https://github.com/BigFreaky/Bitquant-Auto-Bot.git
 cd Bitquant-Auto-Bot
 ```
 
