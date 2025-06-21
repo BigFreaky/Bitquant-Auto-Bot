@@ -1,52 +1,26 @@
 {
   "name": "bitquant-auto-bot",
   "version": "1.0.0",
-  "description": "An automated bot for interacting with the Bitquant.io platform to earn points through multiple Solana wallets",
+  "description": "Automated bot for daily chatting on BitQuant.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:notype": "node index.js --no-type"
   },
-  "keywords": [
-    "bitquant",
-    "solana",
-    "automation",
-    "bot",
-    "crypto",
-    "airdrop",
-    "defi",
-    "blockchain",
-    "web3"
-  ],
-  "author": "BigFreaky",
-  "license": "MIT",
   "dependencies": {
-    "2captcha": "^2.1.0",
-    "axios": "^1.6.0",
-    "base-58": "^0.0.1",
-    "chalk": "^4.1.2",
-    "dotenv": "^16.3.1",
-    "figlet": "^1.8.1",
-    "http-proxy-agent": "^7.0.0",
-    "https-proxy-agent": "^7.0.2",
-    "socks-proxy-agent": "^8.0.2",
+    "@solana/web3.js": "^1.91.8",
+    "axios": "^1.7.2",
+    "bs58": "^5.0.0",
+    "chalk": "^5.3.0",
+    "https-proxy-agent": "^7.0.5",
+    "moment-timezone": "^0.5.45",
+    "ora": "^8.0.1",
     "tweetnacl": "^1.0.3"
   },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8.0.0"
+    "node": ">=14.0.0"
   },
-  "os": [
-    "darwin",
-    "linux",
-    "win32"
-  ],
-  "cpu": [
-    "x64",
-    "arm64"
-  ]
+  "author": "BigFreaky",
+  "license": "ISC"
 }
