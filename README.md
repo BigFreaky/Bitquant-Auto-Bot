@@ -6,7 +6,7 @@ An automated Node.js script designed to perform daily interactions on the Bitqua
 
 -   **Multi-Wallet Support**: Automatically cycles through all private keys listed in your configuration.
 -   **Proxy Integration**: Uses proxies from a `proxies.txt` file to avoid IP-based rate limiting. Supports HTTP, HTTPS, and SOCKS protocols.
--   **Automated Chat**: Performs a set number of daily chat interactions using customizable prompts from `questions.txt`.
+-   **Automated Chat**: Performs a set number of daily chat interactions using customizable prompts from `messages.txt`.
 -   **Detailed Logging**: Provides rich, colorful console output with status icons and a loading spinner for a clear view of the bot's operations.
 -   **24-Hour Cooldown**: After processing all wallets, a 24-hour countdown timer begins for the next cycle.
 -   **Robust Error Handling**: Gracefully handles common errors and continues processing the next wallet.
@@ -31,12 +31,9 @@ cd Bitquant-Auto-Bot
 npm install
 ```
 
-3. Create a `.env` file in the root directory:
+3. Open `private_keys.txt` file and paste your solana wallet private key:
 ```env
-PRIVATE_KEY_1=your_first_solana_private_key_base58
-PRIVATE_KEY_2=your_second_solana_private_key_base58
-PRIVATE_KEY_3=your_third_solana_private_key_base58
-# Add more private keys as needed (PRIVATE_KEY_4, PRIVATE_KEY_5, etc.)
+nano private_keys.txt
 ```
 
 4. Create a `proxies.txt` file in the root directory (optional):
@@ -55,8 +52,8 @@ node index.js
 ```
 ## ⚠️ IMPORTANT SECURITY WARNING
 
-Your `.env` file contains sensitive private keys. NEVER share this file or commit it to GitHub.
-It is highly recommended to add `.env` to your `.gitignore` file to prevent accidental uploads.
+Your `private_keys.txt` file contains sensitive private keys. NEVER share this file or commit it to GitHub.
+It is highly recommended to add `private_keys.txt` to your `.gitignore` file to prevent accidental uploads.
 
 ## Disclaimer
 This script is provided for educational purposes only. The user assumes all responsibility for the use of this bot and for the security of their private keys. The developers are not responsible for any financial loss or account restrictions that may occur. Use at your own risk.
